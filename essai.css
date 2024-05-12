@@ -1,0 +1,640 @@
+/* Style CSS pour le formulaire de contact */
+
+body {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: large;
+  background-color:beige;
+
+}
+.espace_contact{
+  margin-top: 100px;
+
+
+}
+
+.container {
+  width: 80%;
+  margin:  auto;
+  padding: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+ 
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  color:#128f8b ;
+  font-size: 2em;
+}
+h1{
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 2.5em;
+  color:#128f8b
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff; /* Fond blanc pour les champs */
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+/* Style CSS pour le formulaire de contact */
+
+
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style CSS pour le burger */
+
+
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.btn-line {
+  width: 30px;
+  height: 3px;
+  background-color: #128f8b;
+  margin: 4px 0;
+  transition: transform 0.3s ease; 
+}
+.btn-line:hover {
+  background-color: #fa7549;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: #f4f4f4;
+  width: 250px;
+  height: 100%;
+  transition: right 0.3s ease;
+  z-index: 998;
+}
+
+.menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  
+}
+
+.menu-btn.open .btn-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.open .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open .btn-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-btn.open + .menu {
+  right: 0;
+}
+/* Style CSS pour l'entête */
+.entete{
+  background-image:url(images/image_accueil\ claire.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  display: flex;
+  position:relative;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  
+}
+
+@media only screen and (min-width: 1613px) {
+  .entete{
+  height: 700px;
+  }
+}
+
+@media (max-width: 800px) { /* Pour les tablettes et petits écrans */
+  .entete{
+      height: 400px;
+  }
+}
+
+@media (max-width: 500px) { /* Pour les mobiles */
+  .entete {
+      height: 300px;
+  }
+}
+.entete h1{
+  padding-top: 10px;}
+
+/* Style CSS pour les articles */  
+.entete_articles{
+  margin-top: 100px;
+  padding-bottom: 30px;
+  
+  
+}
+
+
+
+/* Style CSS footer*/  
+footer {
+position: absolute;
+margin-bottom: 0;
+width: 100%;
+background-color:#D2D3D7;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+
+
+/* Style CSS pour le slider */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;}
+.mySlides {display: none;}
+img{vertical-align: middle;}
+.mySlides img:hover{filter: brightness(50%);
+  
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border:solid 1x #ccc
+  
+  
+}
+.slideshow-container:hover{
+  border: 6px solid #fa7549;
+}
+
+
+.content-container{
+
+  padding-bottom: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #df1818;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #df1818;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:gold;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:#128f8b;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.fab {
+  color: white; 
+  font-size: larger;
+}
+
+.fab:hover{
+  color:#51cce2
+}
+
+/* gallerie */
+
+.gallerie_menu{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 6px solid #fa7549;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery img:hover {
+
+  filter:brightness(50%);
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* information-container */
+
+
+.information-container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color:beige;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color:#128f8b;
+  text-align: center;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de taille égale */
+  gap: 20px; /* Espacement entre les colonnes */
+}
+
+.links-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .links-container {
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les écrans moyens */
+  
+  }
+}
+
+@media (max-width: 500px) {
+  .links-container {
+      grid-template-columns: 1fr; /* Une colonne sur les petits écrans */
+  }
+}
+
+.links-container a:hover {
+  color:gold
+}
+
+.links-container a{
+  color:#14A6A2;
+}
+/* videos tutos */
+
+
+
+
+.video-grid {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 10px;
+}
+
+
+.video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.video:hover {
+  filter: brightness(50%);
+  
+ 
+}
+
+@media (max-width: 800px) { /* Pour les tablettes et petits écrans */
+  .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) { /* Pour les mobiles */
+  .video-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+ /* page collectif */
+ .video_collectif{
+  
+  justify-content: center;
+  display: flex;
+  background-color: beige;
+  
+  }
+
+  .video_collectif iframe{
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    
+  }
+  .video_collectif iframe:hover{
+    filter: brightness(50%);
+  }
+
+  .collectif_grid{
+    margin-top: 150px;
+    margin-right: 50px;
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px;
+  }
+  .collectif_texte{
+    padding: 20px;
+    
+    height: auto;
+    justify-content: center;
+    color: black;
+    background-color: beige;
+    overflow: auto;
+  }
+
+
+
+
+  .collectif_appel{
+    margin-left: 40px;
+    margin-right: 89px;
+    margin-bottom: 40px;
+    padding: 20px;
+    height: auto;
+    justify-content: center;
+    color: black;
+    background-color: beige;
+    overflow: auto;
+    
+  }
+ 
+
+  .collectif_appel h3 {
+    text-align: center;
+
+  }
+
+  .collectif_appel a{
+    color: black;
+    background-color:#128f8b;
+    text-decoration: none;
+    
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .collectif_appel a:hover{
+    background-color: beige;
+    color:gold;
+    
+  }
+   
+    
+  @media (max-width: 800px) { /* Pour les mobiles */
+      .collectif_grid {
+          grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+  /* Style CSS pour la page transports */  
+  .transports_grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 30px 30px; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    
+  }
+  .ligne{
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    background-color: beige;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .ligne a{
+    color: black;
+    background-color:#128f8b;
+    text-decoration: none;
+   
+    padding: 10px;
+    
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .ligne a:hover{
+    background-color: beige;
+    color:gold;
+  }
+    
+  @media (max-width: 800px) { /* Pour les tablettes et petits écrans */
+    .transports_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 500px) { /* Pour les mobiles */
+    .transports_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
